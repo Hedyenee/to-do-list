@@ -25,11 +25,11 @@ export default function Task({ task }) {
   }
 
   return (
-    <li>
+    <li style={{ backgroundColor: 'lightblue', padding: '10px' }}>
       {editMode ? 
         <>
           { <span>{task.id}</span> }
-          <input
+          <input 
             type="text"
             name="description"
             value={taskDescription}

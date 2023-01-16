@@ -20,15 +20,15 @@ export default function AddTask() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}  style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
       <input
         type="text"
         name="description"
         placeholder="Task description"
-        value={task.description}
+        value={task.description} 
         onChange={handleChange}
       />
-      <button type="submit">Add task</button>
+      <button type="submit" style={{backgroundColor: "blue", color: "white", padding: "10px 10px", border: "none", cursor: "pointer"}}>Add task</button>
     </form>
   );
 }
